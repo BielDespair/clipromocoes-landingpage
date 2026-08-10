@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>CLI Promoção, Café Fazenda Ribeirão em Uberlândia</title>
+	<meta name="description"
+		content="Entrega de cafés em Uberlândia: grão, pó tradicional 500g, gourmet 500g e especial 250g, da marca Café Fazenda Ribeirão em Uberlândia. Fale com a gente pelo WhatsApp.">
+	<meta name="theme-color" content="#3A6B53">
+
+	<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+	<!-- Fontes -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&family=Inter:wght@300;400;500;600&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Prévia ao compartilhar o link (WhatsApp, Facebook) -->
+	<meta property="og:title" content="CLI Promoção, Café Fazenda Ribeirão em Uberlândia">
+	<meta property="og:description"
+		content="A CLI Promoção entrega os cafés da marca Café Fazenda Ribeirão em Uberlândia. Em grão, em pó, tradicional, gourmet e especial, direto no seu WhatsApp.">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="CLI Promoção">
+	<meta property="og:locale" content="pt_BR">
+
+	<!-- Para a miniatura aparecer no WhatsApp, crie a imagem 1200x630 em
+	     assets/og-card.jpg, descomente as 4 linhas abaixo e troque
+	     "https://seudominio.com.br" pelo endereço real do site.
+	     O WhatsApp exige a URL completa aqui; caminho relativo não funciona.
+
+	<meta property="og:url" content="https://seudominio.com.br/">
+	<meta property="og:image" content="https://seudominio.com.br/assets/og-card.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	-->
+
+	<!-- Ficha de dados para os buscadores (não aparece na tela).
+	     Se você tiver um endereço fixo, acrescente dentro de "address":
+	       "streetAddress": "Rua Exemplo, 123 - Bairro",
+	       "postalCode": "38400-000"
+	     O Google leva negócios locais mais a sério quando há endereço completo.
+	     Os preços aqui devem ser sempre os mesmos que aparecem na página. -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Store",
+	  "name": "CLI Promoção",
+	  "description": "Revenda dos cafés da marca Café Fazenda Ribeirão, com entrega em Uberlândia, MG.",
+	  "telephone": "+55-34-99121-5548",
+	  "priceRange": "R$ 28 - R$ 400",
+	  "currenciesAccepted": "BRL",
+	  "address": {
+	    "@type": "PostalAddress",
+	    "addressCountry": "BR",
+	    "addressRegion": "MG",
+	    "addressLocality": "Uberlândia"
+	  },
+	  "areaServed": { "@type": "City", "name": "Uberlândia" },
+	  "hasOfferCatalog": {
+	    "@type": "OfferCatalog",
+	    "name": "Cafés",
+	    "itemListElement": [
+	      {
+	        "@type": "Offer",
+	        "price": "35.00",
+	        "priceCurrency": "BRL",
+	        "availability": "https://schema.org/InStock",
+	        "itemOffered": {
+	          "@type": "Product",
+	          "name": "Café Tradicional 500g",
+	          "description": "Café em pó, linha tradicional, para coador ou cafeteira.",
+	          "brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
+	          "weight": { "@type": "QuantitativeValue", "value": 500, "unitCode": "GRM" }
+	        }
+	      },
+	      {
+	        "@type": "Offer",
+	        "availability": "https://schema.org/InStock",
+	        "itemOffered": {
+	          "@type": "Product",
+	          "name": "Café em Grão 500g",
+	          "description": "Café em grão, linha tradicional, para moer na hora.",
+	          "brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
+	          "weight": { "@type": "QuantitativeValue", "value": 500, "unitCode": "GRM" }
+	        }
+	      },
+	      {
+	        "@type": "Offer",
+	        "price": "45.00",
+	        "priceCurrency": "BRL",
+	        "availability": "https://schema.org/InStock",
+	        "itemOffered": {
+	          "@type": "Product",
+	          "name": "Café Gourmet 500g",
+	          "description": "Café em pó, linha gourmet, mais encorpado e de sabor marcante.",
+	          "brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
+	          "weight": { "@type": "QuantitativeValue", "value": 500, "unitCode": "GRM" }
+	        }
+	      },
+	      {
+	        "@type": "Offer",
+	        "price": "45.00",
+	        "priceCurrency": "BRL",
+	        "availability": "https://schema.org/InStock",
+	        "itemOffered": {
+	          "@type": "Product",
+	          "name": "Café Especial 250g",
+	          "description": "Café especial, em grão ou em pó, seleção para apreciar com calma.",
+	          "brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
+	          "weight": { "@type": "QuantitativeValue", "value": 250, "unitCode": "GRM" }
+	        }
+	      }
+	    ]
+	  }
+	}
+	</script>
+</head>
+
+<body>
+
+	<!-- Ícones do site: definidos uma vez só e reaproveitados com <use> -->
+	<svg style="display:none" aria-hidden="true">
+		<symbol id="ico-seta" viewBox="0 0 24 24">
+			<path d="M7 17L17 7M17 7H8M17 7V16" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round" />
+		</symbol>
+		<symbol id="ico-pino" viewBox="0 0 24 24">
+			<g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+				<circle cx="12" cy="10" r="3" />
+			</g>
+		</symbol>
+	</svg>
+
+	<header class="top-bar">
+		<div class="brand">
+			<span class="brand-name">CLI Promoção</span>
+			<span class="brand-sub">Café Fazenda Ribeirão</span>
+		</div>
+		<a href="https://wa.me/5534991215548" class="top-cta" target="_blank" rel="noopener">
+			Pedir café
+		</a>
+	</header>
+
+	<section class="hero">
+		<div class="hero-text">
+			<span class="kicker">Uberlândia · Minas Gerais</span>
+			<h1>Café que chega<br><span class="italic">fresco</span> na sua casa.</h1>
+			<p class="lead">A CLI Promoção entrega os cafés da marca Café Fazenda Ribeirão em Uberlândia. Em grão ou em
+				pó, nas linhas tradicional, gourmet e especial, direto no seu WhatsApp.</p>
+			<div class="hero-actions">
+				<a href="https://wa.me/5534991215548?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20pedir%20caf%C3%A9."
+					class="btn-primary" target="_blank" rel="noopener">
+					<img src="assets/whatsapp-svgrepo-com.svg" width="18" height="18" alt="" aria-hidden="true">
+					Pedir pelo WhatsApp
+				</a>
+				<a href="#catalogo" class="btn-ghost">Ver os cafés</a>
+			</div>
+		</div>
+		<div class="seal" aria-hidden="true">
+			<svg class="seal-ring" viewBox="0 0 220 220">
+				<defs>
+					<path id="circlePath" d="M 110, 110 m -94, 0 a 94,94 0 1,1 188,0 a 94,94 0 1,1 -188,0" />
+				</defs>
+				<circle cx="110" cy="110" r="108" fill="none" stroke="rgba(212,184,150,0.4)" stroke-width="1" />
+				<circle cx="110" cy="110" r="94" fill="none" stroke="rgba(212,184,150,0.2)" stroke-width="1"
+					stroke-dasharray="2 6" />
+				<text fill="#D4B896" font-size="11" font-family="Inter,sans-serif" letter-spacing="3" font-weight="500">
+					<textPath href="#circlePath" startOffset="0">CAFEZINHO FRESCO • ENTREGA EM UBERLÂNDIA • FAZENDA
+						RIBEIRÃO •
+					</textPath>
+				</text>
+			</svg>
+			<div class="seal-center">
+				<span class="biz">CLI</span>
+				<span class="estd">Promoção</span>
+			</div>
+		</div>
+	</section>
+
+	<div class="divider-words" aria-hidden="true">
+		<span class="line"></span>
+		<span class="text">O Catálogo</span>
+		<span class="line"></span>
+	</div>
+
+	<section class="catalog" id="catalogo">
+		<div class="catalog-head">
+			<h2>Quatro formas de tomar um bom café.</h2>
+			<span class="note">Clique e peça</span>
+		</div>
+
+		<div class="products">
+
+			<article class="product" data-cat="tradicional">
+				<span class="product-num">01</span>
+				<div class="product-info">
+					<span class="badge">Tradicional</span>
+					<h3>Café Tradicional · 500g</h3>
+					<p>Em pó. O café do dia, para o coador ou a cafeteira.</p>
+					<div class="price-table">
+						<div class="price-row">
+							<span class="qty">1 unidade</span>
+							<span class="price">R$ 35,00</span>
+						</div>
+						<div class="price-row">
+							<span class="qty">2 a 3 unidades</span>
+							<span class="price">R$ 33,00 cada</span>
+						</div>
+						<div class="price-row">
+							<span class="qty">4 a 6 unidades</span>
+							<span class="price">R$ 30,00 cada</span>
+						</div>
+						<div class="price-row">
+							<span class="qty">7 a 9 unidades</span>
+							<span class="price">R$ 28,00 cada</span>
+						</div>
+						<div class="price-row">
+							<span class="qty">Fardo com 10 unidades</span>
+							<span class="price">R$ 260,00</span>
+						</div>
+					</div>
+				</div>
+				<div class="product-order">
+					<a href="https://wa.me/5534991215548?text=Ol%C3%A1!%20Quero%20pedir%20o%20Tradicional%20500g."
+						target="_blank" rel="noopener">
+						Pedir este
+						<svg width="14" height="14" aria-hidden="true">
+							<use href="#ico-seta" />
+						</svg>
+					</a>
+				</div>
+			</article>
+
+			<article class="product" data-cat="tradicional">
+				<span class="product-num">02</span>
+				<div class="product-info">
+					<span class="badge">Tradicional</span>
+					<h3>Café em Grão · 500g</h3>
+					<p>Para moer na hora e sentir o aroma preencher a cozinha.</p>
+					<p class="price-ask">Valor sob consulta pelo WhatsApp.</p>
+				</div>
+				<div class="product-order">
+					<a href="https://wa.me/5534991215548?text=Ol%C3%A1!%20Quero%20pedir%20o%20Tradicional%20gr%C3%A3o%20500g."
+						target="_blank" rel="noopener">
+						Pedir este
+						<svg width="14" height="14" aria-hidden="true">
+							<use href="#ico-seta" />
+						</svg>
+					</a>
+				</div>
+			</article>
+
+			<article class="product" data-cat="gourmet">
+				<span class="product-num">03</span>
+				<div class="product-info">
+					<span class="badge">Gourmet</span>
+					<h3>Café Gourmet · 500g</h3>
+					<p>Em pó. Para quem busca um café mais encorpado e de sabor marcante.</p>
+					<div class="price-table">
+						<div class="price-row">
+							<span class="qty">1 unidade</span>
+							<span class="price">R$ 45,00</span>
+						</div>
+						<div class="price-row">
+							<span class="qty">2 a 3 unidades</span>
+							<span class="price">R$ 44,00 cada</span>
+						</div>
+						<div class="price-row">
+							<span class="qty">4 a 6 unidades</span>
+							<span class="price">R$ 42,00 cada</span>
+						</div>
+						<div class="price-row">
+							<span class="qty">7 a 9 unidades</span>
+							<span class="price">R$ 40,00 cada</span>
+						</div>
+						<div class="price-row">
+							<span class="qty">Fardo com 10 unidades</span>
+							<span class="price">R$ 380,00</span>
+						</div>
+					</div>
+				</div>
+				<div class="product-order">
+					<a href="https://wa.me/5534991215548?text=Ol%C3%A1!%20Quero%20pedir%20o%20Gourmet%20500g."
+						target="_blank" rel="noopener">
+						Pedir este
+						<svg width="14" height="14" aria-hidden="true">
+							<use href="#ico-seta" />
+						</svg>
+					</a>
+				</div>
+			</article>
+
+			<article class="product" data-cat="especial">
+				<span class="product-num">04</span>
+				<div class="product-info">
+					<span class="badge">Especial</span>
+					<h3>Café Especial · 250g</h3>
+					<p>Em grão ou em pó. A seleção que surpreende, para apreciar com calma.</p>
+					<div class="price-table">
+						<div class="price-row">
+							<span class="qty">1 unidade</span>
+							<span class="price">R$ 45,00</span>
+						</div>
+						<div class="price-row">
+							<span class="qty">2 a 3 unidades</span>
+							<span class="price">R$ 44,00 cada</span>
+						</div>
+						<div class="price-row">
+							<span class="qty">4 a 6 unidades</span>
+							<span class="price">R$ 43,00 cada</span>
+						</div>
+						<div class="price-row">
+							<span class="qty">7 a 9 unidades</span>
+							<span class="price">R$ 42,00 cada</span>
+						</div>
+						<div class="price-row">
+							<span class="qty">Fardo com 10 unidades</span>
+							<span class="price">R$ 400,00</span>
+						</div>
+					</div>
+				</div>
+				<div class="product-order">
+					<a href="https://wa.me/5534991215548?text=Ol%C3%A1!%20Quero%20pedir%20o%20Especial%20250g."
+						target="_blank" rel="noopener">
+						Pedir este
+						<svg width="14" height="14" aria-hidden="true">
+							<use href="#ico-seta" />
+						</svg>
+					</a>
+				</div>
+			</article>
+
+		</div>
+	</section>
+
+	<section class="brand-band">
+		<div class="brand-band-inner">
+			<div class="eyebrow">A Marca</div>
+			<h2>Café <em>Fazenda Ribeirão</em></h2>
+			<p>A marca que a CLI Promoção traz até você. Café em grão ou em pó, nas linhas tradicional, gourmet e
+				especial, direto do fornecedor para a sua casa.</p>
+		</div>
+	</section>
+
+	<section class="how">
+		<h2>Como pedir o seu café.</h2>
+		<div class="how-steps">
+			<div class="step">
+				<div class="step-num">Passo 01</div>
+				<h3>Escolha o café</h3>
+				<p>Tradicional, gourmet ou especial. Em grão ou em pó, você decide.</p>
+			</div>
+			<div class="step">
+				<div class="step-num">Passo 02</div>
+				<h3>Chame no WhatsApp</h3>
+				<p>Clique em qualquer botão de pedido. A conversa já começa pronta.</p>
+			</div>
+			<div class="step">
+				<div class="step-num">Passo 03</div>
+				<h3>Receba em casa</h3>
+				<p>A entrega é feita em Uberlândia. Combine os detalhes com a gente.</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="delivery-band">
+		<span class="pin" aria-hidden="true">
+			<svg width="16" height="16">
+				<use href="#ico-pino" />
+			</svg>
+		</span>
+		<p>Entregamos somente em <strong>Uberlândia, MG</strong>.</p>
+	</div>
+
+	<footer>
+		<div class="footer-brand">
+			<h3>CLI Promoção</h3>
+			<p>Café Fazenda Ribeirão · Uberlândia, MG</p>
+		</div>
+		<div class="footer-contact">
+			<span class="label">Pedidos</span>
+			<a href="https://wa.me/5534991215548" class="phone" target="_blank" rel="noopener">(34) 99121-5548</a>
+		</div>
+	</footer>
+
+	<div class="footer-bottom">
+		<span>© CLI Promoção · Revenda de café em Uberlândia</span>
+		<span class="city">Uberlândia · Minas Gerais</span>
+	</div>
+
+</body>
+
+</html>

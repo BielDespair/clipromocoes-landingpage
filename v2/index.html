@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Café Fazenda Ribeirão em Uberlândia | CLI Promoção</title>
+	<meta name="description"
+		content="Café Fazenda Ribeirão com entrega em Uberlândia: tradicional em pó ou em grão, gourmet e especial. Quanto mais pacotes, menor o preço de cada um. Peça pelo WhatsApp.">
+	<meta name="theme-color" content="#EDEFE7">
+
+	<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;600&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="styles.css">
+
+	<meta property="og:title" content="Café Fazenda Ribeirão em Uberlândia | CLI Promoção">
+	<meta property="og:description"
+		content="Tradicional, gourmet e especial, em grão ou em pó. Escolha o pacote, peça pelo WhatsApp e receba em casa.">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="CLI Promoção">
+	<meta property="og:locale" content="pt_BR">
+
+	<!-- Miniatura ao compartilhar o link: crie assets/og-card.jpg (1200x630),
+	     descomente abaixo e troque pelo endereço real do site. -->
+	<!--
+	<meta property="og:url" content="https://seudominio.com.br/">
+	<meta property="og:image" content="https://seudominio.com.br/assets/og-card.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	-->
+
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Store",
+	  "name": "CLI Promoção",
+	  "description": "Revenda dos cafés da marca Café Fazenda Ribeirão, com entrega em Uberlândia, MG.",
+	  "telephone": "+55-34-99121-5548",
+	  "priceRange": "R$ 28 - R$ 400",
+	  "currenciesAccepted": "BRL",
+	  "address": {
+	    "@type": "PostalAddress",
+	    "addressCountry": "BR",
+	    "addressRegion": "MG",
+	    "addressLocality": "Uberlândia"
+	  },
+	  "areaServed": { "@type": "City", "name": "Uberlândia" },
+	  "hasOfferCatalog": {
+	    "@type": "OfferCatalog",
+	    "name": "Cafés",
+	    "itemListElement": [
+	      {
+	        "@type": "Offer",
+	        "price": "35.00",
+	        "priceCurrency": "BRL",
+	        "availability": "https://schema.org/InStock",
+	        "itemOffered": {
+	          "@type": "Product",
+	          "name": "Café tradicional 500g",
+	          "description": "Café em pó, linha tradicional, para coador ou cafeteira.",
+	          "brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
+	          "weight": { "@type": "QuantitativeValue", "value": 500, "unitCode": "GRM" }
+	        }
+	      },
+	      {
+	        "@type": "Offer",
+	        "availability": "https://schema.org/InStock",
+	        "itemOffered": {
+	          "@type": "Product",
+	          "name": "Café tradicional em grão 500g",
+	          "description": "Café em grão, linha tradicional, para moer na hora.",
+	          "brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
+	          "weight": { "@type": "QuantitativeValue", "value": 500, "unitCode": "GRM" }
+	        }
+	      },
+	      {
+	        "@type": "Offer",
+	        "price": "45.00",
+	        "priceCurrency": "BRL",
+	        "availability": "https://schema.org/InStock",
+	        "itemOffered": {
+	          "@type": "Product",
+	          "name": "Café gourmet 500g",
+	          "description": "Café em pó, linha gourmet, torra mais cuidadosa e corpo mais cheio.",
+	          "brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
+	          "weight": { "@type": "QuantitativeValue", "value": 500, "unitCode": "GRM" }
+	        }
+	      },
+	      {
+	        "@type": "Offer",
+	        "price": "45.00",
+	        "priceCurrency": "BRL",
+	        "availability": "https://schema.org/InStock",
+	        "itemOffered": {
+	          "@type": "Product",
+	          "name": "Café especial 250g",
+	          "description": "Café especial de lote selecionado, disponível em grão ou moído.",
+	          "brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
+	          "weight": { "@type": "QuantitativeValue", "value": 250, "unitCode": "GRM" }
+	        }
+	      }
+	    ]
+	  }
+	}
+	</script>
+</head>
+
+<body>
+
+	<!-- Ícones reaproveitados com <use> -->
+	<svg style="display:none" aria-hidden="true">
+		<symbol id="ico-zap" viewBox="0 0 24 24">
+			<path fill="currentColor"
+				d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.25 8.24z" />
+		</symbol>
+		<symbol id="ico-pino" viewBox="0 0 24 24">
+			<g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+				<circle cx="12" cy="10" r="3" />
+			</g>
+		</symbol>
+	</svg>
+
+	<header class="topo">
+		<div class="limite topo-inner">
+			<div>
+				<span class="marca-nome">CLI Promoção</span>
+				<span class="marca-sub">Café Fazenda Ribeirão</span>
+			</div>
+			<a class="btn-zap pequeno" href="https://wa.me/5534991215548" target="_blank" rel="noopener">
+				<svg width="16" height="16" aria-hidden="true">
+					<use href="#ico-zap" />
+				</svg>
+				Fazer pedido
+			</a>
+		</div>
+	</header>
+
+	<main>
+
+		<section class="limite hero">
+			<div>
+				<span class="rotulo">Uberlândia, Minas Gerais</span>
+				<h1>Café que sai da fazenda e para <em>na sua cozinha</em>.</h1>
+				<p class="chamada">Quatro cafés da Fazenda Ribeirão, do coador de todo dia ao lote especial. Você
+					escolhe o pacote, manda mensagem e recebe em casa. Levando mais de um, o preço de cada um cai.</p>
+				<div class="hero-acoes">
+					<a class="btn-zap grande"
+						href="https://wa.me/5534991215548?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20pedir%20caf%C3%A9."
+						target="_blank" rel="noopener">
+						<svg width="18" height="18" aria-hidden="true">
+							<use href="#ico-zap" />
+						</svg>
+						Pedir pelo WhatsApp
+					</a>
+					<a class="btn-linha" href="#catalogo">Ver os quatro cafés</a>
+				</div>
+			</div>
+			<div class="hero-foto">
+				<img src="images/hero.jpg" alt="Pacotes de café da Fazenda Ribeirão" loading="eager" width="800"
+					height="1000">
+				<span class="hero-selo">Entrega combinada pelo WhatsApp</span>
+			</div>
+		</section>
+
+		<section class="limite catalogo" id="catalogo">
+			<div class="catalogo-topo">
+				<h2>Quatro cafés para quatro jeitos de começar o dia.</h2>
+				<span class="rotulo">Preço por quantidade</span>
+			</div>
+
+			<div class="grade">
+
+				<article class="cafe" data-linha="tradicional">
+					<div class="foto" data-vazia="images/tradicional-po.jpg">
+						<img src="images/tradicional-po.jpg" alt="Pacote de café tradicional moído de 500 gramas"
+							loading="lazy" width="640" height="400">
+					</div>
+					<div class="cafe-corpo">
+						<span class="tipo">Tradicional · moído</span>
+						<h3>Café tradicional <span>500 g</span></h3>
+						<p class="cafe-desc">O café de todo dia. Rende bem no coador e aguenta o bule da manhã
+							inteira.</p>
+						<div class="tabela">
+							<div class="faixa" style="--economia:0%">
+								<span class="qtd">1 pacote</span>
+								<span class="valor">R$ 35,00</span>
+							</div>
+							<div class="faixa" style="--economia:22%">
+								<span class="qtd">2 a 3 pacotes <span class="corte">−6%</span></span>
+								<span class="valor">R$ 33,00 <small>cada</small></span>
+							</div>
+							<div class="faixa" style="--economia:54%">
+								<span class="qtd">4 a 6 pacotes <span class="corte">−14%</span></span>
+								<span class="valor">R$ 30,00 <small>cada</small></span>
+							</div>
+							<div class="faixa" style="--economia:77%">
+								<span class="qtd">7 a 9 pacotes <span class="corte">−20%</span></span>
+								<span class="valor">R$ 28,00 <small>cada</small></span>
+							</div>
+							<div class="faixa melhor" style="--economia:100%">
+								<span class="qtd">Fardo com 10 <span class="corte">−26%</span></span>
+								<span class="valor">R$ 260,00 <small>R$ 26,00 cada</small></span>
+							</div>
+						</div>
+						<a class="btn-zap"
+							href="https://wa.me/5534991215548?text=Ol%C3%A1!%20Quero%20pedir%20o%20caf%C3%A9%20tradicional%20mo%C3%ADdo%20500g."
+							target="_blank" rel="noopener">
+							<svg width="16" height="16" aria-hidden="true">
+								<use href="#ico-zap" />
+							</svg>
+							Pedir este café
+						</a>
+					</div>
+				</article>
+
+				<article class="cafe" data-linha="tradicional">
+					<div class="foto" data-vazia="images/tradicional-grao.jpg">
+						<img src="images/tradicional-grao.jpg" alt="Pacote de café tradicional em grão de 500 gramas"
+							loading="lazy" width="640" height="400">
+					</div>
+					<div class="cafe-corpo">
+						<span class="tipo">Tradicional · em grão</span>
+						<h3>Café em grão <span>500 g</span></h3>
+						<p class="cafe-desc">O mesmo café, ainda inteiro. Você mói na hora e a cozinha inteira fica
+							sabendo.</p>
+						<p class="sob-consulta">O preço do grão varia conforme o lote. Chame no WhatsApp que a gente
+							passa o valor do dia.</p>
+						<a class="btn-zap"
+							href="https://wa.me/5534991215548?text=Ol%C3%A1!%20Quero%20saber%20o%20pre%C3%A7o%20do%20caf%C3%A9%20em%20gr%C3%A3o%20500g."
+							target="_blank" rel="noopener">
+							<svg width="16" height="16" aria-hidden="true">
+								<use href="#ico-zap" />
+							</svg>
+							Consultar preço
+						</a>
+					</div>
+				</article>
+
+				<article class="cafe" data-linha="gourmet">
+					<div class="foto" data-vazia="images/gourmet.jpg">
+						<img src="assets/gourmet.webp" alt="Pacote de café gourmet de 500 gramas" loading="lazy"
+							width="640" height="400">
+					</div>
+					<div class="cafe-corpo">
+						<span class="tipo">Gourmet · moído</span>
+						<h3>Café gourmet <span>500 g</span></h3>
+						<p class="cafe-desc">Torra mais cuidadosa, corpo mais cheio. Para quem já reparou que café tem
+							sabor.</p>
+						<div class="tabela">
+							<div class="faixa" style="--economia:0%">
+								<span class="qtd">1 pacote</span>
+								<span class="valor">R$ 45,00</span>
+							</div>
+							<div class="faixa" style="--economia:13%">
+								<span class="qtd">2 a 3 pacotes <span class="corte">−2%</span></span>
+								<span class="valor">R$ 44,00 <small>cada</small></span>
+							</div>
+							<div class="faixa" style="--economia:43%">
+								<span class="qtd">4 a 6 pacotes <span class="corte">−7%</span></span>
+								<span class="valor">R$ 42,00 <small>cada</small></span>
+							</div>
+							<div class="faixa" style="--economia:71%">
+								<span class="qtd">7 a 9 pacotes <span class="corte">−11%</span></span>
+								<span class="valor">R$ 40,00 <small>cada</small></span>
+							</div>
+							<div class="faixa melhor" style="--economia:100%">
+								<span class="qtd">Fardo com 10 <span class="corte">−16%</span></span>
+								<span class="valor">R$ 380,00 <small>R$ 38,00 cada</small></span>
+							</div>
+						</div>
+						<a class="btn-zap"
+							href="https://wa.me/5534991215548?text=Ol%C3%A1!%20Quero%20pedir%20o%20caf%C3%A9%20gourmet%20500g."
+							target="_blank" rel="noopener">
+							<svg width="16" height="16" aria-hidden="true">
+								<use href="#ico-zap" />
+							</svg>
+							Pedir este café
+						</a>
+					</div>
+				</article>
+
+				<article class="cafe" data-linha="especial">
+					<div class="foto" data-vazia="images/especial.jpg">
+						<img src="images/especial.jpg" alt="Pacote de café especial de 250 gramas" loading="lazy"
+							width="640" height="400">
+					</div>
+					<div class="cafe-corpo">
+						<span class="tipo">Especial · grão ou moído</span>
+						<h3>Café especial <span>250 g</span></h3>
+						<p class="cafe-desc">Lote selecionado. Pacote menor porque esse aqui se toma devagar, sem
+							pressa.</p>
+						<div class="tabela">
+							<div class="faixa" style="--economia:0%">
+								<span class="qtd">1 pacote</span>
+								<span class="valor">R$ 45,00</span>
+							</div>
+							<div class="faixa" style="--economia:18%">
+								<span class="qtd">2 a 3 pacotes <span class="corte">−2%</span></span>
+								<span class="valor">R$ 44,00 <small>cada</small></span>
+							</div>
+							<div class="faixa" style="--economia:36%">
+								<span class="qtd">4 a 6 pacotes <span class="corte">−4%</span></span>
+								<span class="valor">R$ 43,00 <small>cada</small></span>
+							</div>
+							<div class="faixa" style="--economia:55%">
+								<span class="qtd">7 a 9 pacotes <span class="corte">−7%</span></span>
+								<span class="valor">R$ 42,00 <small>cada</small></span>
+							</div>
+							<div class="faixa melhor" style="--economia:100%">
+								<span class="qtd">Fardo com 10 <span class="corte">−11%</span></span>
+								<span class="valor">R$ 400,00 <small>R$ 40,00 cada</small></span>
+							</div>
+						</div>
+						<a class="btn-zap"
+							href="https://wa.me/5534991215548?text=Ol%C3%A1!%20Quero%20pedir%20o%20caf%C3%A9%20especial%20250g."
+							target="_blank" rel="noopener">
+							<svg width="16" height="16" aria-hidden="true">
+								<use href="#ico-zap" />
+							</svg>
+							Pedir este café
+						</a>
+					</div>
+				</article>
+
+			</div>
+		</section>
+
+		<section class="marca-faixa">
+			<div class="limite">
+				<span class="rotulo">A marca</span>
+				<h2>A <em>Fazenda Ribeirão</em> torra e embala. A gente leva até a sua porta.</h2>
+				<p>Trabalhamos com as quatro linhas da marca, em grão e em pó. Sem loja, sem vitrine e sem
+					intermediário: o pedido chega por mensagem e sai para entrega no mesmo combinado.</p>
+			</div>
+		</section>
+
+		<section class="limite passos">
+			<h2>Do pedido à xícara.</h2>
+			<ol>
+				<li>
+					<h3>Escolha o pacote</h3>
+					<p>Cada café tem a tabela por quantidade. Vale conferir antes: fechar o fardo muda bastante a
+						conta.</p>
+				</li>
+				<li>
+					<h3>Toque no botão</h3>
+					<p>A conversa abre no WhatsApp já com o café escolhido escrito. É só mandar.</p>
+				</li>
+				<li>
+					<h3>Combine a entrega</h3>
+					<p>A gente acerta dia, endereço e forma de pagamento na própria conversa.</p>
+				</li>
+			</ol>
+		</section>
+
+		<div class="entrega">
+			<div class="limite">
+				<svg width="17" height="17" aria-hidden="true">
+					<use href="#ico-pino" />
+				</svg>
+				<p>Entregamos apenas em <strong>Uberlândia, MG</strong>.</p>
+			</div>
+		</div>
+
+	</main>
+
+	<footer class="limite">
+		<div class="rodape-marca">
+			<h3>CLI Promoção</h3>
+			<p>Revenda Café Fazenda Ribeirão · Uberlândia, MG</p>
+		</div>
+		<div class="rodape-contato">
+			<span class="rotulo">Pedidos</span>
+			<a class="telefone" href="https://wa.me/5534991215548" target="_blank" rel="noopener">(34) 99121-5548</a>
+		</div>
+	</footer>
+
+	<div class="limite rodape-fim">
+		<span>© CLI Promoção · Café com entrega em Uberlândia</span>
+		<span>Uberlândia · Minas Gerais</span>
+	</div>
+
+	<script>
+		document.querySelectorAll('.foto img').forEach(function (img) {
+			img.addEventListener('error', function () {
+				img.closest('.foto').classList.add('vazia');
+			});
+		});
+	</script>
+
+</body>
+
+</html>
