@@ -3,19 +3,24 @@
 
 
 <head>
+
+	<!-- ══ 1. DOCUMENTO ══════════════════════════════════════════ -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#3A6B53">
 
+
+	<!-- ══ 2. SEO / INDEXAÇÃO ════════════════════════════════════ -->
 	<title>CLI Promoção, Café Fazenda Ribeirão em Uberlândia</title>
 
 	<meta name="description"
 		content="Entrega de cafés em Uberlândia: grão, pó tradicional 500g, gourmet 500g e especial 250g, da marca Café Fazenda Ribeirão em Uberlândia. Fale com a gente pelo WhatsApp.">
 
-	<meta name="theme-color" content="#3A6B53">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://www.clipromocoes.com.br/">
 
-	<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
-	<!-- Open Graph — WhatsApp, Facebook etc. -->
+	<!-- ══ 3. COMPARTILHAMENTO (Open Graph / WhatsApp) ═══════════ -->
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="CLI Promoção">
 	<meta property="og:locale" content="pt_BR">
@@ -27,26 +32,31 @@
 		content="A CLI Promoção entrega os cafés da marca Café Fazenda Ribeirão em Uberlândia. Em grão, em pó, tradicional, gourmet e especial, direto no seu WhatsApp.">
 
 	<meta property="og:image" content="https://www.clipromocoes.com.br/assets/og-card.jpg">
-
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Cafés da marca Café Fazenda Ribeirão">
 
-	<!-- Fontes -->
+
+	<!-- ══ 4. ÍCONES ═════════════════════════════════════════════ -->
+	<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+
+	<!-- ══ 5. FONTES E ESTILOS ═══════════════════════════════════ -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<link
-		href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&family=Inter:wght@300;400;500;600&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&family=Inter:wght@300;400;500;600&display=swap"rel="stylesheet">
 
 	<link rel="stylesheet" href="styles.css">
 
-	<!-- Dados estruturados para buscadores -->
+
+	<!-- ══ 6. DADOS ESTRUTURADOS (schema.org) ════════════════════ -->
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
 		"@type": "Store",
 		"name": "CLI Promoção",
+		"url": "https://www.clipromocoes.com.br/",
 		"description": "Revenda dos cafés da marca Café Fazenda Ribeirão, com entrega em Uberlândia, MG.",
 		"telephone": "+55-34-99121-5548",
 		"priceRange": "R$ 28 - R$ 400",
@@ -74,15 +84,8 @@
 						"@type": "Product",
 						"name": "Café Tradicional 500g",
 						"description": "Café em pó, linha tradicional, para coador ou cafeteira.",
-						"brand": {
-							"@type": "Brand",
-							"name": "Café Fazenda Ribeirão"
-						},
-						"weight": {
-							"@type": "QuantitativeValue",
-							"value": 500,
-							"unitCode": "GRM"
-						}
+						"brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
+						"weight": { "@type": "QuantitativeValue", "value": 500, "unitCode": "GRM" }
 					}
 				},
 				{
@@ -92,15 +95,8 @@
 						"@type": "Product",
 						"name": "Café em Grão 500g",
 						"description": "Café em grão, linha tradicional, para moer na hora.",
-						"brand": {
-							"@type": "Brand",
-							"name": "Café Fazenda Ribeirão"
-						},
-						"weight": {
-							"@type": "QuantitativeValue",
-							"value": 500,
-							"unitCode": "GRM"
-						}
+						"brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
+						"weight": { "@type": "QuantitativeValue", "value": 500, "unitCode": "GRM" }
 					}
 				},
 				{
@@ -112,15 +108,8 @@
 						"@type": "Product",
 						"name": "Café Gourmet 500g",
 						"description": "Café em pó, linha gourmet, mais encorpado e de sabor marcante.",
-						"brand": {
-							"@type": "Brand",
-							"name": "Café Fazenda Ribeirão"
-						},
-						"weight": {
-							"@type": "QuantitativeValue",
-							"value": 500,
-							"unitCode": "GRM"
-						}
+						"brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
+						"weight": { "@type": "QuantitativeValue", "value": 500, "unitCode": "GRM" }
 					}
 				},
 				{
@@ -132,21 +121,15 @@
 						"@type": "Product",
 						"name": "Café Especial 250g",
 						"description": "Café especial, em grão ou em pó, seleção para apreciar com calma.",
-						"brand": {
-							"@type": "Brand",
-							"name": "Café Fazenda Ribeirão"
-						},
-						"weight": {
-							"@type": "QuantitativeValue",
-							"value": 250,
-							"unitCode": "GRM"
-						}
+						"brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
+						"weight": { "@type": "QuantitativeValue", "value": 250, "unitCode": "GRM" }
 					}
 				}
 			]
 		}
 	}
 	</script>
+
 </head>
 
 
