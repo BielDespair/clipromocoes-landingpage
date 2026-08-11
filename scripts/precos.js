@@ -94,6 +94,7 @@ async function carregarPrecos() {
 		const container = document.querySelector(`[data-produto="${produto}"]`);
 		if (!container) continue;
 
+		container.classList.add('price-table');
 		container.replaceChildren(montarTabela(faixas));
 	}
 }
