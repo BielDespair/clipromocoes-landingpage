@@ -3,133 +3,289 @@
 
 
 <head>
-
-	<!-- ══ 1. DOCUMENTO ══════════════════════════════════════════ -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="theme-color" content="#3A6B53">
 
-
-	<!-- ══ 2. SEO / INDEXAÇÃO ════════════════════════════════════ -->
-	<title>CLI Promoção, Café Fazenda Ribeirão em Uberlândia</title>
+	<title>Café em Uberlândia com Entrega | Fazenda Ribeirão — CLI Promoção</title>
 
 	<meta name="description"
-		content="Entrega de cafés em Uberlândia: grão, pó tradicional 500g, gourmet 500g e especial 250g, da marca Café Fazenda Ribeirão em Uberlândia. Fale com a gente pelo WhatsApp.">
+		content="Entrega de café em Uberlândia, MG: tradicional, gourmet e especial, em grão ou em pó, da marca Café Fazenda Ribeirão. Peça pelo WhatsApp e receba em casa.">
 
-	<meta name="robots" content="index, follow">
+	<meta name="theme-color" content="#3A6B53">
+
+	<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 	<link rel="canonical" href="https://www.clipromocoes.com.br/">
 
 
-	<!-- ══ 3. COMPARTILHAMENTO (Open Graph / WhatsApp) ═══════════ -->
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="CLI Promoção">
 	<meta property="og:locale" content="pt_BR">
 	<meta property="og:url" content="https://www.clipromocoes.com.br/">
 
-	<meta property="og:title" content="CLI Promoção, Café Fazenda Ribeirão em Uberlândia">
+	<meta property="og:title" content="Café em Uberlândia com Entrega | Fazenda Ribeirão">
 
 	<meta property="og:description"
 		content="A CLI Promoção entrega os cafés da marca Café Fazenda Ribeirão em Uberlândia. Em grão, em pó, tradicional, gourmet e especial, direto no seu WhatsApp.">
 
 	<meta property="og:image" content="https://www.clipromocoes.com.br/assets/og-card.jpg">
-	<meta property="og:image:width" content="1000">
-	<meta property="og:image:height" content="1000">
-	<meta property="og:image:alt" content="Cafés da marca Café Fazenda Ribeirão">
 
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
 
-	<!-- ══ 4. ÍCONES ═════════════════════════════════════════════ -->
-	<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-
-
-	<!-- ══ 5. FONTES E ESTILOS ═══════════════════════════════════ -->
+	<!-- Fontes -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&family=Inter:wght@300;400;500;600&display=swap"rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&family=Inter:wght@300;400;500;600&display=swap"
+		rel="stylesheet">
 
 	<link rel="stylesheet" href="styles.css">
 
+	<!-- Estilos da seção de perguntas frequentes.
+	     Ficam aqui para não depender de alterações no styles.css.
+	     Se preferir, mova este bloco para o final do styles.css. -->
+	<style>
+		.faq {
+			max-width: 760px;
+			margin: 0 auto;
+			padding: 5rem 1.5rem;
+		}
 
-	<!-- ══ 6. DADOS ESTRUTURADOS (schema.org) ════════════════════ -->
+		.faq h2 {
+			font-family: 'Fraunces', Georgia, serif;
+			font-weight: 400;
+			font-size: clamp(1.75rem, 4vw, 2.5rem);
+			line-height: 1.15;
+			margin: 0 0 2.5rem;
+		}
+
+		.faq-item {
+			border-top: 1px solid rgba(128, 128, 128, 0.28);
+		}
+
+		.faq-item:last-of-type {
+			border-bottom: 1px solid rgba(128, 128, 128, 0.28);
+		}
+
+		.faq-item summary {
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+			gap: 1.5rem;
+			cursor: pointer;
+			list-style: none;
+			padding: 1.35rem 0;
+			font-family: 'Inter', system-ui, sans-serif;
+			font-size: 1.02rem;
+			font-weight: 500;
+			line-height: 1.4;
+		}
+
+		.faq-item summary::-webkit-details-marker {
+			display: none;
+		}
+
+		.faq-item summary::after {
+			content: "+";
+			flex: none;
+			font-size: 1.35rem;
+			font-weight: 300;
+			line-height: 1;
+			opacity: 0.55;
+			transition: transform 0.25s ease;
+		}
+
+		.faq-item[open] summary::after {
+			transform: rotate(45deg);
+		}
+
+		.faq-item summary:focus-visible {
+			outline: 2px solid currentColor;
+			outline-offset: 4px;
+		}
+
+		.faq-item p {
+			margin: 0 0 1.5rem;
+			padding-right: 3rem;
+			font-family: 'Inter', system-ui, sans-serif;
+			font-size: 0.97rem;
+			font-weight: 300;
+			line-height: 1.65;
+			opacity: 0.82;
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			.faq-item summary::after {
+				transition: none;
+			}
+		}
+	</style>
+
+	<!-- Dados estruturados: o negócio, o catálogo e as perguntas frequentes -->
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
-		"@type": "Store",
-		"name": "CLI Promoção",
-		"url": "https://www.clipromocoes.com.br/",
-		"description": "Revenda dos cafés da marca Café Fazenda Ribeirão, com entrega em Uberlândia, MG.",
-		"telephone": "+55-34-99121-5548",
-		"priceRange": "R$ 28 - R$ 400",
-		"currenciesAccepted": "BRL",
-		"address": {
-			"@type": "PostalAddress",
-			"addressCountry": "BR",
-			"addressRegion": "MG",
-			"addressLocality": "Uberlândia"
-		},
-		"areaServed": {
-			"@type": "City",
-			"name": "Uberlândia"
-		},
-		"hasOfferCatalog": {
-			"@type": "OfferCatalog",
-			"name": "Cafés",
-			"itemListElement": [
-				{
-					"@type": "Offer",
-					"price": "35.00",
-					"priceCurrency": "BRL",
-					"availability": "https://schema.org/InStock",
-					"itemOffered": {
-						"@type": "Product",
-						"name": "Café Tradicional 500g",
-						"description": "Café em pó, linha tradicional, para coador ou cafeteira.",
-						"brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
-						"weight": { "@type": "QuantitativeValue", "value": 500, "unitCode": "GRM" }
-					}
+		"@graph": [
+			{
+				"@type": "LocalBusiness",
+				"@id": "https://www.clipromocoes.com.br/#negocio",
+				"name": "CLI Promoção",
+				"description": "Revenda dos cafés da marca Café Fazenda Ribeirão, com entrega em Uberlândia, MG.",
+				"url": "https://www.clipromocoes.com.br/",
+				"image": "https://www.clipromocoes.com.br/assets/og-card.jpg",
+				"telephone": "+55-34-99121-5548",
+				"priceRange": "R$ 28 - R$ 400",
+				"currenciesAccepted": "BRL",
+				"paymentAccepted": "Pix, Dinheiro, Cartão",
+				"address": {
+					"@type": "PostalAddress",
+					"addressCountry": "BR",
+					"addressRegion": "MG",
+					"addressLocality": "Uberlândia"
 				},
-				{
-					"@type": "Offer",
-					"availability": "https://schema.org/InStock",
-					"itemOffered": {
-						"@type": "Product",
-						"name": "Café em Grão 500g",
-						"description": "Café em grão, linha tradicional, para moer na hora.",
-						"brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
-						"weight": { "@type": "QuantitativeValue", "value": 500, "unitCode": "GRM" }
-					}
+				"areaServed": {
+					"@type": "City",
+					"name": "Uberlândia"
 				},
-				{
-					"@type": "Offer",
-					"price": "45.00",
-					"priceCurrency": "BRL",
-					"availability": "https://schema.org/InStock",
-					"itemOffered": {
-						"@type": "Product",
-						"name": "Café Gourmet 500g",
-						"description": "Café em pó, linha gourmet, mais encorpado e de sabor marcante.",
-						"brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
-						"weight": { "@type": "QuantitativeValue", "value": 500, "unitCode": "GRM" }
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+						"opens": "08:00",
+						"closes": "18:00"
+					},
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": "Saturday",
+						"opens": "08:00",
+						"closes": "12:00"
 					}
-				},
-				{
-					"@type": "Offer",
-					"price": "45.00",
-					"priceCurrency": "BRL",
-					"availability": "https://schema.org/InStock",
-					"itemOffered": {
-						"@type": "Product",
-						"name": "Café Especial 250g",
-						"description": "Café especial, em grão ou em pó, seleção para apreciar com calma.",
-						"brand": { "@type": "Brand", "name": "Café Fazenda Ribeirão" },
-						"weight": { "@type": "QuantitativeValue", "value": 250, "unitCode": "GRM" }
-					}
+				],
+				"hasOfferCatalog": {
+					"@type": "OfferCatalog",
+					"name": "Cafés Fazenda Ribeirão",
+					"itemListElement": [
+						{
+							"@type": "Offer",
+							"price": "35.00",
+							"priceCurrency": "BRL",
+							"availability": "https://schema.org/InStock",
+							"itemOffered": {
+								"@type": "Product",
+								"name": "Café Tradicional 500g",
+								"description": "Café em pó, linha tradicional, para coador ou cafeteira.",
+								"brand": {
+									"@type": "Brand",
+									"name": "Café Fazenda Ribeirão"
+								},
+								"weight": {
+									"@type": "QuantitativeValue",
+									"value": 500,
+									"unitCode": "GRM"
+								}
+							}
+						},
+						{
+							"@type": "Offer",
+							"price": "45.00",
+							"priceCurrency": "BRL",
+							"availability": "https://schema.org/InStock",
+							"itemOffered": {
+								"@type": "Product",
+								"name": "Café Especial 250g em Pó",
+								"description": "Café especial em pó, seleção para apreciar com calma.",
+								"brand": {
+									"@type": "Brand",
+									"name": "Café Fazenda Ribeirão"
+								},
+								"weight": {
+									"@type": "QuantitativeValue",
+									"value": 250,
+									"unitCode": "GRM"
+								}
+							}
+						},
+						{
+							"@type": "Offer",
+							"price": "45.00",
+							"priceCurrency": "BRL",
+							"availability": "https://schema.org/InStock",
+							"itemOffered": {
+								"@type": "Product",
+								"name": "Café Gourmet 500g",
+								"description": "Café em pó, linha gourmet, mais encorpado e de sabor marcante.",
+								"brand": {
+									"@type": "Brand",
+									"name": "Café Fazenda Ribeirão"
+								},
+								"weight": {
+									"@type": "QuantitativeValue",
+									"value": 500,
+									"unitCode": "GRM"
+								}
+							}
+						}
+					]
 				}
-			]
-		}
+			},
+			{
+				"@type": "FAQPage",
+				"@id": "https://www.clipromocoes.com.br/#faq",
+				"mainEntity": [
+					{
+						"@type": "Question",
+						"name": "Vocês entregam em quais cidades?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "A entrega é feita somente em Uberlândia, MG. Atendemos toda a cidade, incluindo Santa Mônica, Segismundo Pereira, Tibery, Umuarama, Jardim Karaíba, Morada da Colina, Granja Marileusa, Luizote de Freitas e o Centro."
+						}
+					},
+					{
+						"@type": "Question",
+						"name": "Qual é o prazo de entrega?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "Combinamos data e horário pelo WhatsApp no momento do pedido, de acordo com a região da cidade e a quantidade solicitada."
+						}
+					},
+					{
+						"@type": "Question",
+						"name": "Qual a diferença entre o café gourmet e o especial?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "O gourmet usa grãos selecionados e tem sabor mais encorpado e marcante que o tradicional. O especial passa por uma seleção mais rigorosa de grãos e torra, com acidez e aroma mais evidentes, e é vendido em pacotes de 250g."
+						}
+					},
+					{
+						"@type": "Question",
+						"name": "Tem valor mínimo de pedido?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "Não há valor mínimo. A partir de duas unidades o preço por pacote já diminui, e o fardo com dez unidades tem o melhor valor."
+						}
+					},
+					{
+						"@type": "Question",
+						"name": "Como faço para pagar?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "Aceitamos Pix, dinheiro e cartão. O pagamento é combinado pelo WhatsApp junto com o pedido."
+						}
+					},
+					{
+						"@type": "Question",
+						"name": "Vocês vendem café em grão?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "Sim. O café especial de 250g está disponível em grão, para moer na hora. Consulte o valor pelo WhatsApp."
+						}
+					}
+				]
+			}
+		]
 	}
 	</script>
-
 </head>
 
 
@@ -162,7 +318,7 @@
 	<section class="hero">
 		<div class="hero-text">
 			<span class="kicker">Uberlândia · Minas Gerais</span>
-			<h1>Café que chega<br><span class="italic">fresco</span> na sua casa.</h1>
+			<h1>Café fresco entregue<br>em <span class="italic">Uberlândia</span>.</h1>
 			<p class="lead">A CLI Promoção entrega os cafés da marca Café Fazenda Ribeirão em Uberlândia. Em grão ou em
 				pó, nas linhas tradicional, gourmet e especial, direto no seu WhatsApp.</p>
 			<div class="hero-actions">
@@ -219,6 +375,11 @@
 					<h3>Café Tradicional · 500g</h3>
 					<p>Em pó. O café do dia, para o coador ou a cafeteira.</p>
 
+					<!-- Quando tiver a foto, descomente e ajuste o caminho:
+					<img class="product-photo" src="assets/cafe-tradicional-500g.jpg"
+						alt="Pacote de Café Fazenda Ribeirão tradicional 500g em pó"
+						width="600" height="600" loading="lazy"> -->
+
 					<div class="price-table">
 						<div class="price-row">
 							<span class="qty">1 unidade</span>
@@ -264,6 +425,11 @@
 					<h3>Café Especial · 250g em Grão</h3>
 					<p>Em grão. Para moer na hora e aproveitar melhor os aromas e sabores do café.</p>
 
+					<!-- Quando tiver a foto, descomente e ajuste o caminho:
+					<img class="product-photo" src="assets/cafe-especial-250g-grao.jpg"
+						alt="Pacote de Café Fazenda Ribeirão especial 250g em grão"
+						width="600" height="600" loading="lazy"> -->
+
 					<p class="price-ask">Valor sob consulta pelo WhatsApp.</p>
 				</div>
 
@@ -287,6 +453,11 @@
 					<span class="badge">Especial</span>
 					<h3>Café Especial · 250g em Pó</h3>
 					<p>Em pó. Uma seleção especial para quem aprecia um café de qualidade.</p>
+
+					<!-- Quando tiver a foto, descomente e ajuste o caminho:
+					<img class="product-photo" src="assets/cafe-especial-250g-po.jpg"
+						alt="Pacote de Café Fazenda Ribeirão especial 250g em pó"
+						width="600" height="600" loading="lazy"> -->
 
 					<div class="price-table">
 						<div class="price-row">
@@ -332,6 +503,11 @@
 					<span class="badge">Gourmet</span>
 					<h3>Café Gourmet · 500g</h3>
 					<p>Em pó. Para quem busca um café mais encorpado e de sabor marcante.</p>
+
+					<!-- Quando tiver a foto, descomente e ajuste o caminho:
+					<img class="product-photo" src="assets/cafe-gourmet-500g.jpg"
+						alt="Pacote de Café Fazenda Ribeirão gourmet 500g em pó"
+						width="600" height="600" loading="lazy"> -->
 
 					<div class="price-table">
 						<div class="price-row">
@@ -402,6 +578,46 @@
 				<p>A entrega é feita em Uberlândia. Combine os detalhes com a gente.</p>
 			</div>
 		</div>
+	</section>
+
+	<section class="faq" id="perguntas">
+		<h2>Perguntas frequentes</h2>
+
+		<details class="faq-item">
+			<summary>Vocês entregam em quais cidades?</summary>
+			<p>A entrega é feita somente em Uberlândia, MG. Atendemos toda a cidade, incluindo Santa Mônica,
+				Segismundo Pereira, Tibery, Umuarama, Jardim Karaíba, Morada da Colina, Granja Marileusa, Luizote de
+				Freitas e o Centro.</p>
+		</details>
+
+		<details class="faq-item">
+			<summary>Qual é o prazo de entrega?</summary>
+			<p>Combinamos data e horário pelo WhatsApp no momento do pedido, de acordo com a região da cidade e a
+				quantidade solicitada.</p>
+		</details>
+
+		<details class="faq-item">
+			<summary>Qual a diferença entre o café gourmet e o especial?</summary>
+			<p>O gourmet usa grãos selecionados e tem sabor mais encorpado e marcante que o tradicional. O especial
+				passa por uma seleção mais rigorosa de grãos e torra, com acidez e aroma mais evidentes, e é vendido
+				em pacotes de 250g.</p>
+		</details>
+
+		<details class="faq-item">
+			<summary>Tem valor mínimo de pedido?</summary>
+			<p>Não há valor mínimo. A partir de duas unidades o preço por pacote já diminui, e o fardo com dez
+				unidades tem o melhor valor.</p>
+		</details>
+
+		<details class="faq-item">
+			<summary>Como faço para pagar?</summary>
+			<p>Aceitamos Pix e dinheiro. O pagamento é combinado pelo WhatsApp junto com o pedido.</p>
+		</details>
+
+		<details class="faq-item">
+			<summary>Vocês vendem café em grão?</summary>
+			<p>Sim. O café especial de 250g está disponível em grão, para moer na hora. Consulte o valor pelo WhatsApp.</p>
+		</details>
 	</section>
 
 	<div class="delivery-band">
