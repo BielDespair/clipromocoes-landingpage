@@ -329,7 +329,8 @@
 			<h1>Café fresco entregue<br>em <span class="italic">Uberlândia</span>.</h1>
 			<p class="lead">A CLI Promoção entrega os cafés da marca Café Fazenda Ribeirão em Uberlândia.
 				<strong>100% arábica</strong>, em grão ou em pó, nas linhas tradicional, gourmet e especial,
-				direto no seu WhatsApp.</p>
+				direto no seu WhatsApp.
+			</p>
 			<div class="hero-actions">
 				<a href="https://wa.me/5534991215548?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20pedir%20caf%C3%A9."
 					class="btn-primary" target="_blank" rel="noopener">
@@ -389,7 +390,7 @@
 						alt="Pacote de Café Fazenda Ribeirão tradicional 500g em pó"
 						width="600" height="600" loading="lazy"> -->
 
-					<div class="price-table">
+					<div class="price-table" data-produto="tradicional-500">
 						<div class="price-row">
 							<span class="qty">1 a 3 unidades</span>
 							<span class="price">R$ 35,00 cada</span>
@@ -435,7 +436,9 @@
 						alt="Pacote de Café Fazenda Ribeirão especial 250g em grão"
 						width="600" height="600" loading="lazy"> -->
 
-					<p class="price-ask">Valor sob consulta pelo WhatsApp.</p>
+					<div data-produto="especial-250-grao">
+						<p class="price-ask">Valor sob consulta pelo WhatsApp.</p>
+					</div>
 				</div>
 
 				<div class="product-order">
@@ -464,7 +467,7 @@
 						alt="Pacote de Café Fazenda Ribeirão especial 250g em pó"
 						width="600" height="600" loading="lazy"> -->
 
-					<div class="price-table">
+					<div class="price-table" data-produto="especial-250-po">
 						<div class="price-row">
 							<span class="qty">1 unidade</span>
 							<span class="price">R$ 45,00</span>
@@ -514,7 +517,7 @@
 						alt="Pacote de Café Fazenda Ribeirão gourmet 500g em pó"
 						width="600" height="600" loading="lazy"> -->
 
-					<div class="price-table">
+					<div class="price-table" data-produto="gourmet-500">
 						<div class="price-row">
 							<span class="qty">1 unidade</span>
 							<span class="price">R$ 45,00</span>
@@ -656,6 +659,9 @@
 		<span>© CLI Promoção · Revenda de café em Uberlândia</span>
 		<span class="city">Uberlândia · Minas Gerais</span>
 	</div>
+
+	<!-- Carrega as faixas de preço da planilha. Se falhar, os preços acima permanecem. -->
+	<script src="scripts/precos.js" defer></script>
 
 </body>
 
