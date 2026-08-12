@@ -131,7 +131,7 @@
 				"@type": "LocalBusiness",
 				"@id": "https://www.clipromocoes.com.br/#negocio",
 				"name": "CLI Promoção",
-				"description": "Revenda dos cafés 100% arábica da marca Café Fazenda Ribeirão, com entrega em Uberlândia, MG.",
+				"description": "Revenda dos cafés da marca Café Fazenda Ribeirão, com entrega em Uberlândia, MG.",
 				"url": "https://www.clipromocoes.com.br/",
 				"image": "https://www.clipromocoes.com.br/assets/og-card.jpg",
 				"telephone": "+55-34-99121-5548",
@@ -161,86 +161,96 @@
 						"opens": "08:00",
 						"closes": "12:00"
 					}
-				],
-				"hasOfferCatalog": {
-					"@type": "OfferCatalog",
-					"name": "Cafés Fazenda Ribeirão · 100% arábica",
-					"itemListElement": [
-						{
-							"@type": "Offer",
-							"price": "35.00",
-							"priceCurrency": "BRL",
-							"availability": "https://schema.org/InStock",
-							"itemOffered": {
-								"@type": "Product",
-								"name": "Café Tradicional 500g",
-								"description": "Café 100% arábica em pó, linha tradicional, para coador ou cafeteira.",
-								"brand": {
-									"@type": "Brand",
-									"name": "Café Fazenda Ribeirão"
-								},
-								"weight": {
-									"@type": "QuantitativeValue",
-									"value": 500,
-									"unitCode": "GRM"
-								}
-							}
-						},
-						{
-							"@type": "Offer",
-							"price": "45.00",
-							"priceCurrency": "BRL",
-							"availability": "https://schema.org/InStock",
-							"itemOffered": {
-								"@type": "Product",
-								"name": "Café Especial 250g em Pó",
-								"description": "Café especial 100% arábica em pó, seleção para apreciar com calma.",
-								"brand": {
-									"@type": "Brand",
-									"name": "Café Fazenda Ribeirão"
-								},
-								"weight": {
-									"@type": "QuantitativeValue",
-									"value": 250,
-									"unitCode": "GRM"
-								}
-							}
-						},
-						{
-							"@type": "Offer",
-							"price": "45.00",
-							"priceCurrency": "BRL",
-							"availability": "https://schema.org/InStock",
-							"itemOffered": {
-								"@type": "Product",
-								"name": "Café Gourmet 500g",
-								"description": "Café 100% arábica em pó, linha gourmet, mais encorpado e de sabor marcante.",
-								"brand": {
-									"@type": "Brand",
-									"name": "Café Fazenda Ribeirão"
-								},
-								"weight": {
-									"@type": "QuantitativeValue",
-									"value": 500,
-									"unitCode": "GRM"
-								}
-							}
-						}
-					]
+				]
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.clipromocoes.com.br/#cafe-tradicional-500g",
+				"name": "Café Tradicional 500g",
+				"description": "Café em pó, linha tradicional, para coador ou cafeteira. Entrega em Uberlândia, MG.",
+				"image": "https://www.clipromocoes.com.br/assets/og-card.jpg",
+				"brand": {
+					"@type": "Brand",
+					"name": "Café Fazenda Ribeirão"
+				},
+				"weight": {
+					"@type": "QuantitativeValue",
+					"value": 500,
+					"unitCode": "GRM"
+				},
+				"offers": {
+					"@type": "AggregateOffer",
+					"url": "https://www.clipromocoes.com.br/#catalogo",
+					"priceCurrency": "BRL",
+					"lowPrice": "26.00",
+					"highPrice": "35.00",
+					"offerCount": 5,
+					"availability": "https://schema.org/InStock",
+					"seller": {
+						"@id": "https://www.clipromocoes.com.br/#negocio"
+					}
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.clipromocoes.com.br/#cafe-especial-250g-po",
+				"name": "Café Especial 250g em Pó",
+				"description": "Café especial em pó, seleção para apreciar com calma. Entrega em Uberlândia, MG.",
+				"image": "https://www.clipromocoes.com.br/assets/og-card.jpg",
+				"brand": {
+					"@type": "Brand",
+					"name": "Café Fazenda Ribeirão"
+				},
+				"weight": {
+					"@type": "QuantitativeValue",
+					"value": 250,
+					"unitCode": "GRM"
+				},
+				"offers": {
+					"@type": "AggregateOffer",
+					"url": "https://www.clipromocoes.com.br/#catalogo",
+					"priceCurrency": "BRL",
+					"lowPrice": "40.00",
+					"highPrice": "45.00",
+					"offerCount": 5,
+					"availability": "https://schema.org/InStock",
+					"seller": {
+						"@id": "https://www.clipromocoes.com.br/#negocio"
+					}
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.clipromocoes.com.br/#cafe-gourmet-500g",
+				"name": "Café Gourmet 500g",
+				"description": "Café em pó, linha gourmet, mais encorpado e de sabor marcante. Entrega em Uberlândia, MG.",
+				"image": "https://www.clipromocoes.com.br/assets/og-card.jpg",
+				"brand": {
+					"@type": "Brand",
+					"name": "Café Fazenda Ribeirão"
+				},
+				"weight": {
+					"@type": "QuantitativeValue",
+					"value": 500,
+					"unitCode": "GRM"
+				},
+				"offers": {
+					"@type": "AggregateOffer",
+					"url": "https://www.clipromocoes.com.br/#catalogo",
+					"priceCurrency": "BRL",
+					"lowPrice": "38.00",
+					"highPrice": "45.00",
+					"offerCount": 5,
+					"availability": "https://schema.org/InStock",
+					"seller": {
+						"@id": "https://www.clipromocoes.com.br/#negocio"
+					}
 				}
 			},
 			{
 				"@type": "FAQPage",
 				"@id": "https://www.clipromocoes.com.br/#faq",
 				"mainEntity": [
-					{
-						"@type": "Question",
-						"name": "O café é 100% arábica?",
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": "Sim. Todos os cafés Fazenda Ribeirão que entregamos são 100% arábica, sem mistura com conilon ou robusta. É o grão de sabor mais suave, menos amargo e com aroma mais delicado."
-						}
-					},
 					{
 						"@type": "Question",
 						"name": "Vocês entregam em quais cidades?",
@@ -262,7 +272,7 @@
 						"name": "Qual a diferença entre o café gourmet e o especial?",
 						"acceptedAnswer": {
 							"@type": "Answer",
-							"text": "Os dois são 100% arábica. O gourmet usa grãos selecionados e tem sabor mais encorpado e marcante que o tradicional. O especial passa por uma seleção mais rigorosa de grãos e torra, com acidez e aroma mais evidentes, e é vendido em pacotes de 250g."
+							"text": "O gourmet usa grãos selecionados e tem sabor mais encorpado e marcante que o tradicional. O especial passa por uma seleção mais rigorosa de grãos e torra, com acidez e aroma mais evidentes, e é vendido em pacotes de 250g."
 						}
 					},
 					{
@@ -270,7 +280,7 @@
 						"name": "Tem valor mínimo de pedido?",
 						"acceptedAnswer": {
 							"@type": "Answer",
-							"text": "Não há valor mínimo. A partir de quatro unidades o preço por pacote já diminui, e o fardo com dez unidades tem o melhor valor."
+							"text": "Não há valor mínimo. A partir de duas unidades o preço por pacote já diminui, e o fardo com dez unidades tem o melhor valor."
 						}
 					},
 					{
