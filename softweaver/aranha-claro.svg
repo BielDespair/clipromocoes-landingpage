@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="157 25 726 726" role="img" aria-label="SoftWeaver">
+  <title>SoftWeaver</title>
+  <style>svg{--body:#14161C;--eye:#F4F5F7}</style>
+  <defs>
+    <linearGradient id="lA" gradientUnits="userSpaceOnUse" x1="18" y1="32" x2="62" y2="348">
+      <stop offset="0%" stop-color="var(--body)"/><stop offset="82%" stop-color="var(--body)"/>
+      <stop offset="91%" stop-color="#B0374F"/><stop offset="100%" stop-color="#F0122F"/>
+    </linearGradient>
+    <linearGradient id="lAm" gradientUnits="userSpaceOnUse" x1="-18" y1="32" x2="-62" y2="348">
+      <stop offset="0%" stop-color="var(--body)"/><stop offset="82%" stop-color="var(--body)"/>
+      <stop offset="91%" stop-color="#B0374F"/><stop offset="100%" stop-color="#F0122F"/>
+    </linearGradient>
+    <linearGradient id="lB" gradientUnits="userSpaceOnUse" x1="22" y1="14" x2="160" y2="305">
+      <stop offset="0%" stop-color="var(--body)"/><stop offset="82%" stop-color="var(--body)"/>
+      <stop offset="91%" stop-color="#B0374F"/><stop offset="100%" stop-color="#F0122F"/>
+    </linearGradient>
+    <linearGradient id="lBm" gradientUnits="userSpaceOnUse" x1="-22" y1="14" x2="-160" y2="305">
+      <stop offset="0%" stop-color="var(--body)"/><stop offset="82%" stop-color="var(--body)"/>
+      <stop offset="91%" stop-color="#B0374F"/><stop offset="100%" stop-color="#F0122F"/>
+    </linearGradient>
+    <linearGradient id="lC" gradientUnits="userSpaceOnUse" x1="24" y1="-16" x2="215" y2="155">
+      <stop offset="0%" stop-color="var(--body)"/><stop offset="82%" stop-color="var(--body)"/>
+      <stop offset="91%" stop-color="#B0374F"/><stop offset="100%" stop-color="#F0122F"/>
+    </linearGradient>
+    <linearGradient id="lCm" gradientUnits="userSpaceOnUse" x1="-24" y1="-16" x2="-215" y2="155">
+      <stop offset="0%" stop-color="var(--body)"/><stop offset="82%" stop-color="var(--body)"/>
+      <stop offset="91%" stop-color="#B0374F"/><stop offset="100%" stop-color="#F0122F"/>
+    </linearGradient>
+    <linearGradient id="lD" gradientUnits="userSpaceOnUse" x1="20" y1="-24" x2="144" y2="-344">
+      <stop offset="0%" stop-color="var(--body)"/><stop offset="82%" stop-color="var(--body)"/>
+      <stop offset="91%" stop-color="#B0374F"/><stop offset="100%" stop-color="#F0122F"/>
+    </linearGradient>
+    <linearGradient id="lDm" gradientUnits="userSpaceOnUse" x1="-20" y1="-24" x2="-144" y2="-344">
+      <stop offset="0%" stop-color="var(--body)"/><stop offset="82%" stop-color="var(--body)"/>
+      <stop offset="91%" stop-color="#B0374F"/><stop offset="100%" stop-color="#F0122F"/>
+    </linearGradient>
+    <linearGradient id="lP" gradientUnits="userSpaceOnUse" x1="10" y1="46" x2="40" y2="94">
+      <stop offset="0%" stop-color="var(--body)"/><stop offset="60%" stop-color="var(--body)"/>
+      <stop offset="80%" stop-color="#B0374F"/><stop offset="100%" stop-color="#F0122F"/>
+    </linearGradient>
+    <linearGradient id="lPm" gradientUnits="userSpaceOnUse" x1="-10" y1="46" x2="-40" y2="94">
+      <stop offset="0%" stop-color="var(--body)"/><stop offset="60%" stop-color="var(--body)"/>
+      <stop offset="80%" stop-color="#B0374F"/><stop offset="100%" stop-color="#F0122F"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(512 388) rotate(-3) scale(-1 1)">
+    <path fill="url(#lA)"  d="M27 23 Q54 66 74 106 Q88 172 92 228 Q80 292 62 348 Q70 292 74 230 Q66 172 52 120 Q35 76 9 41 Z"/>
+    <path fill="url(#lAm)" d="M-27 23 Q-54 66 -74 106 Q-88 172 -92 228 Q-80 292 -62 348 Q-70 292 -74 230 Q-66 172 -52 120 Q-35 76 -9 41 Z"/>
+    <path fill="url(#lB)"  d="M26 4 Q76 26 120 52 Q148 110 156 172 Q162 240 160 305 Q150 240 144 174 Q136 116 106 78 Q60 48 18 24 Z"/>
+    <path fill="url(#lBm)" d="M-26 4 Q-76 26 -120 52 Q-148 110 -156 172 Q-162 240 -160 305 Q-150 240 -144 174 Q-136 116 -106 78 Q-60 48 -18 24 Z"/>
+    <path fill="url(#lC)"  d="M24 -16 Q84 -32 134 -22 Q172 30 192 90 Q208 125 215 155 Q196 128 182 98 Q164 40 126 -2 Q72 -4 24 4 Z"/>
+    <path fill="url(#lCm)" d="M-24 -16 Q-84 -32 -134 -22 Q-172 30 -192 90 Q-208 125 -215 155 Q-196 128 -182 98 Q-164 40 -126 -2 Q-72 -4 -24 4 Z"/>
+    <path fill="url(#lD)"  d="M29 -30 Q66 -78 93 -118 Q118 -180 131 -236 Q139 -292 144 -344 Q125 -288 113 -232 Q98 -172 75 -110 Q42 -70 11 -18 Z"/>
+    <path fill="url(#lDm)" d="M-29 -30 Q-66 -78 -93 -118 Q-118 -180 -131 -236 Q-139 -292 -144 -344 Q-125 -288 -113 -232 Q-98 -172 -75 -110 Q-42 -70 -11 -18 Z"/>
+    <path fill="url(#lP)"  d="M13 42 Q30 62 40 94 Q28 68 7 50 Z"/>
+    <path fill="url(#lPm)" d="M-13 42 Q-30 62 -40 94 Q-28 68 -7 50 Z"/>
+    <path fill="var(--body)" d="M0 -176 C34 -170 62 -142 66 -102 C70 -60 50 -28 16 -12 L-16 -12 C-50 -28 -70 -60 -66 -102 C-62 -142 -34 -170 0 -176 Z"/>
+    <path fill="var(--body)" d="M-15 -22 C-32 -16 -36 2 -34 18 C-32 40 -21 54 0 58 C21 54 32 40 34 18 C36 2 32 -16 15 -22 Z"/>
+    <path fill="var(--body)" d="M-12 56 Q-4 58 -3 60 Q-5 76 -8 84 Q-12 74 -12 56 Z"/>
+    <path fill="var(--body)" d="M12 56 Q4 58 3 60 Q5 76 8 84 Q12 74 12 56 Z"/>
+    <circle cx="-6" cy="43" r="1.7" fill="var(--eye)"/>
+    <circle cx="6" cy="43" r="1.7" fill="var(--eye)"/>
+    <g fill="#B0374F">
+      <path d="M-15 -130 Q0 -137 15 -130 Q5 -108 0 -100 Q-5 -108 -15 -130 Z"/>
+      <path d="M-15 -70 Q0 -63 15 -70 Q5 -92 0 -100 Q-5 -92 -15 -70 Z"/>
+    </g>
+  </g>
+</svg>
