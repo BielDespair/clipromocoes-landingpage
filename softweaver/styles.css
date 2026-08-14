@@ -142,7 +142,7 @@ h2{
   content:'';position:absolute;top:6px;left:32px;right:-28px;height:1px;background:var(--silk);
 }
 .step:last-child::after{display:none}
-.step h4{font-family:var(--display);font-weight:700;font-size:17px;margin-bottom:9px;letter-spacing:-.01em}
+.step h3{font-family:var(--display);font-weight:700;font-size:17px;margin-bottom:9px;letter-spacing:-.01em}
 .step p{font-size:15px;color:var(--dusk)}
 @media(max-width:860px){
   .flow{grid-template-columns:1fr;gap:30px}
@@ -176,4 +176,67 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
 footer p,footer a{font-family:var(--mono);font-size:12px;color:var(--mist);text-decoration:none}
 footer a:hover{color:var(--thread)}
 :focus-visible{outline:2px solid var(--thread);outline-offset:3px}
+/* ---------- skip link ---------- */
+.skip{
+  position:absolute;left:28px;top:-100px;z-index:100;
+  background:var(--invert-bg);color:var(--invert-fg);
+  font-family:var(--mono);font-size:13px;letter-spacing:.05em;
+  padding:14px 22px;border-radius:2px;text-decoration:none;
+  transition:top .18s;
+}
+.skip:focus-visible{top:16px}
 
+/* ---------- faq ---------- */
+.faq{border-top:1px solid var(--silk)}
+.faq details{border-bottom:1px solid var(--silk)}
+.faq summary{
+  list-style:none;cursor:pointer;
+  display:flex;align-items:baseline;gap:16px;
+  font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-.02em;
+  padding:24px 0;transition:color .18s;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{
+  content:'+';
+  font-family:var(--mono);font-weight:400;font-size:17px;color:var(--thread);
+  flex:none;width:14px;
+}
+.faq details[open] summary::before{content:'–'}
+.faq summary:hover{color:var(--thread)}
+.faq details p{
+  color:var(--dusk);font-size:16px;max-width:62ch;
+  padding:0 0 26px 30px;margin-top:-4px;
+}
+
+/* ---------- documento (política de privacidade) ---------- */
+.doc header{padding:76px 0 56px}
+.doc h1{font-size:clamp(2.1rem,4.6vw,3.2rem);max-width:16ch}
+.doc .lede{max-width:52ch;margin-bottom:22px}
+.doc header .sec-intro{
+  font-family:var(--mono);font-size:12px;letter-spacing:.08em;
+  color:var(--mist);margin-bottom:0;
+}
+.doc header .sec-intro strong{font-weight:400;color:var(--dusk)}
+
+.doc section{padding:52px 0}
+.doc section h2{margin-bottom:26px;max-width:24ch}
+.doc section h3{
+  font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:-.01em;
+  margin:30px 0 10px;
+}
+.doc section p{color:var(--dusk);max-width:68ch;margin-bottom:16px}
+.doc section ul{list-style:none;max-width:68ch;margin-bottom:20px}
+.doc section li{
+  position:relative;padding-left:20px;margin-bottom:10px;
+  color:var(--dusk);font-size:16px;
+}
+.doc section li::before{
+  content:'';position:absolute;left:0;top:12px;width:9px;height:1px;background:var(--thread);
+}
+.doc section li strong{color:var(--ink);font-weight:500}
+.doc section a{color:var(--ink);text-decoration-color:var(--thread);text-underline-offset:3px}
+.doc section a:hover{color:var(--thread)}
+
+.doc .contact p{color:var(--mist);max-width:46ch}
+.doc .contact a{color:var(--invert-fg);text-decoration-color:var(--thread-soft)}
+.doc .contact .cta{text-decoration:none}

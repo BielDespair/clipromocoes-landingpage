@@ -4,25 +4,163 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Softweaver — Cardápio digital, PDV e atendimento no WhatsApp</title>
 	<meta name="description"
-		content="Softweaver desenvolve cardápio digital, PDV e atendimento automatizado no WhatsApp para restaurantes e comércios.">
+		content="Cardápio digital, PDV e atendimento automatizado no WhatsApp para restaurantes e comércios. O pedido nasce na conversa e chega pronto na cozinha.">
+
+	<link rel="canonical" href="https://www.softweaver.com.br/">
+	<meta name="robots" content="index, follow, max-image-preview:large">
+	<meta name="theme-color" content="#0f0e13">
+
 	<link rel="icon" href="aranha-adaptativo.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="aranha-adaptativo.svg">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+	<!-- Preview em WhatsApp, LinkedIn, Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Softweaver">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:url" content="https://www.softweaver.com.br/">
+	<meta property="og:title" content="Softweaver — Cardápio digital, PDV e atendimento no WhatsApp">
+	<meta property="og:description"
+		content="Cardápio digital, atendimento no WhatsApp e PDV que conversam entre si. O pedido nasce na conversa e chega pronto na cozinha.">
+	<meta property="og:image" content="https://www.softweaver.com.br/og.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Softweaver — tecendo software">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Softweaver — Cardápio digital, PDV e atendimento no WhatsApp">
+	<meta name="twitter:description"
+		content="Cardápio digital, atendimento no WhatsApp e PDV que conversam entre si.">
+	<meta name="twitter:image" content="https://www.softweaver.com.br/og.png">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Karla:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap"
 		rel="stylesheet">
+
 	<link rel="stylesheet" href="styles.css">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+				"@type": "Organization",
+				"@id": "https://www.softweaver.com.br/#organization",
+				"name": "Softweaver",
+				"legalName": "24.875.897 CLEIDIMAR LEONEL DOS SANTOS",
+				"taxID": "24.875.897/0001-65",
+				"url": "https://www.softweaver.com.br/",
+				"logo": "https://www.softweaver.com.br/aranha-adaptativo.svg",
+				"image": "https://www.softweaver.com.br/og.png",
+				"description": "Desenvolvimento de cardápio digital, PDV e atendimento automatizado no WhatsApp para restaurantes e comércios.",
+				"email": "contato@softweaver.com.br",
+				"telephone": "+5534999151282",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Uberlândia",
+					"addressRegion": "MG",
+					"addressCountry": "BR"
+				},
+				"areaServed": { "@type": "Country", "name": "Brasil" },
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"contactType": "sales",
+					"telephone": "+5534999151282",
+					"email": "contato@softweaver.com.br",
+					"availableLanguage": "Portuguese"
+				}
+			},
+			{
+				"@type": "WebSite",
+				"@id": "https://www.softweaver.com.br/#website",
+				"url": "https://www.softweaver.com.br/",
+				"name": "Softweaver",
+				"inLanguage": "pt-BR",
+				"publisher": { "@id": "https://www.softweaver.com.br/#organization" }
+			},
+			{
+				"@type": "Service",
+				"name": "Cardápio digital, PDV e atendimento no WhatsApp",
+				"serviceType": "Software para restaurantes",
+				"provider": { "@id": "https://www.softweaver.com.br/#organization" },
+				"areaServed": { "@type": "Country", "name": "Brasil" },
+				"audience": {
+					"@type": "BusinessAudience",
+					"name": "Restaurantes, lanchonetes e comércios"
+				},
+				"hasOfferCatalog": {
+					"@type": "OfferCatalog",
+					"name": "Produtos Softweaver",
+					"itemListElement": [
+						{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cardápio digital", "description": "Cardápio por link ou QR code, com fotos, preços, adicionais e controle de itens em falta." } },
+						{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Atendimento no WhatsApp", "description": "Atendimento automatizado que consulta o cardápio, monta o pedido e transfere para um atendente humano quando necessário." } },
+						{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PDV", "description": "Ponto de venda com comanda por mesa e por entrega, fechamento, divisão de conta e relatório diário." } }
+					]
+				}
+			},
+			{
+				"@type": "FAQPage",
+				"@id": "https://www.softweaver.com.br/#faq",
+				"mainEntity": [
+					{
+						"@type": "Question",
+						"name": "O cliente precisa instalar algum aplicativo?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "Não. O cardápio abre por link ou QR code no navegador, e o atendimento acontece no próprio WhatsApp do cliente."
+						}
+					},
+					{
+						"@type": "Question",
+						"name": "Preciso trocar o número de WhatsApp do restaurante?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "Não. O estabelecimento conecta o próprio número à plataforma. Quem já usa o aplicativo WhatsApp Business pode continuar usando junto com o atendimento automatizado."
+						}
+					},
+					{
+						"@type": "Question",
+						"name": "O atendimento automatizado responde sozinho o tempo todo?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "Ele responde dúvidas, consulta o cardápio e monta o pedido. Quando a conversa foge do previsto, ou quando você quiser, o atendimento passa a conversa para uma pessoa da equipe."
+						}
+					},
+					{
+						"@type": "Question",
+						"name": "Dá para usar só uma das partes?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "Sim. Cardápio digital, atendimento no WhatsApp e PDV funcionam separados. Juntos, eliminam a digitação repetida entre a conversa e o caixa."
+						}
+					},
+					{
+						"@type": "Question",
+						"name": "Atendem fora de Uberlândia?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "Sim. A Softweaver fica em Uberlândia, Minas Gerais, e atende estabelecimentos em todo o Brasil de forma remota."
+						}
+					}
+				]
+			}
+		]
+	}
+	</script>
 </head>
 
 <body>
 
-	<nav>
+	<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+	<nav aria-label="Principal">
 		<div class="wrap">
 			<a class="mark" href="#topo">
-				<img src="aranha-adaptativo.svg" alt="">
+				<img src="aranha-adaptativo.svg" alt="" width="88" height="88">
 				<b>Soft<span>Weaver</span></b>
 			</a>
 
@@ -35,301 +173,359 @@
 		</div>
 	</nav>
 
-	<header id="topo">
-		<div class="wrap hero-grid">
-			<div>
-				<p class="eyebrow">Tecendo software</p>
+	<main id="conteudo">
 
-				<h1>
-					Seu restaurante atende, anota e cobra <em>num fio só</em>.
-				</h1>
+		<header id="topo">
+			<div class="wrap hero-grid">
+				<div>
+					<p class="eyebrow">Tecendo software</p>
 
-				<p class="lede">
-					Cardápio digital, atendimento no WhatsApp e PDV que conversam entre si.
-					O pedido nasce na conversa e chega pronto na cozinha.
+					<h1>
+						Seu restaurante atende, anota e cobra <em>num fio só</em>.
+					</h1>
+
+					<p class="lede">
+						Cardápio digital, atendimento no WhatsApp e PDV que conversam entre si.
+						O pedido nasce na conversa e chega pronto na cozinha.
+					</p>
+
+					<div class="cta-row">
+						<a class="cta cta-solid" href="#contato">
+							Pedir uma demonstração
+						</a>
+
+						<a class="cta cta-ghost" href="#produtos">
+							Ver os produtos
+						</a>
+					</div>
+				</div>
+
+				<svg class="web-art" viewBox="0 0 520 470" role="img"
+					aria-label="Teia ligando cardápio, atendimento e PDV">
+					<g fill="none" stroke="var(--mist)" stroke-linecap="round" opacity="0.65">
+						<g class="thread-line" stroke-width="1.1">
+							<path d="M260 232 L495 218" />
+							<path d="M260 232 L432 372" />
+							<path d="M260 232 L292 452" />
+							<path d="M260 232 L96 386" />
+							<path d="M260 232 L26 240" />
+							<path d="M260 232 L74 84" />
+							<path d="M260 232 L242 14" />
+							<path d="M260 232 L410 76" />
+						</g>
+
+						<path class="thread-arc" stroke-width="1.4"
+							d="M382 226 Q356 279 361 302 Q305 306 288 350 Q239 314 205 315 Q189 267 148 238 Q173 189 169 152 Q222 151 240 109 Q288 145 324 145 Q340 191 382 226 Z" />
+
+						<path class="thread-arc" stroke-width="1.3"
+							d="M448 222 Q408 300 415 336 Q332 341 306 407 Q231 351 179 353 Q155 279 92 235 Q131 158 125 102 Q205 101 233 36 Q307 92 361 92 Q385 165 448 222 Z" />
+					</g>
+
+					<g class="node" style="animation-delay:1.4s">
+						<circle cx="242" cy="14" r="6" fill="var(--thread)" />
+						<text x="242" y="-2" text-anchor="middle" font-family="Space Mono,monospace" font-size="12"
+							fill="var(--dusk)">
+							cardápio
+						</text>
+					</g>
+
+					<g class="node" style="animation-delay:1.55s">
+						<circle cx="432" cy="372" r="6" fill="var(--thread)" />
+						<text x="432" y="396" text-anchor="middle" font-family="Space Mono,monospace" font-size="12"
+							fill="var(--dusk)">
+							PDV
+						</text>
+					</g>
+
+					<g class="node" style="animation-delay:1.7s">
+						<circle cx="96" cy="386" r="6" fill="var(--thread)" />
+						<text x="96" y="410" text-anchor="middle" font-family="Space Mono,monospace" font-size="12"
+							fill="var(--dusk)">
+							WhatsApp
+						</text>
+					</g>
+
+					<g class="node" style="animation-delay:1.85s" transform="translate(260 232) scale(2.15)">
+						<g fill="none" stroke="var(--ink)" stroke-width="3.1" stroke-linecap="round"
+							stroke-linejoin="round">
+							<path d="M4 3 Q13 8 16 19" />
+							<path d="M-4 3 Q-13 8 -16 19" />
+							<path d="M5 -1 Q17 0 23 9" />
+							<path d="M-5 -1 Q-17 0 -23 9" />
+							<path d="M7 -7 Q19 -9 24 -17" />
+							<path d="M-7 -7 Q-19 -9 -24 -17" />
+							<path d="M6 -13 Q14 -21 15 -29" />
+							<path d="M-6 -13 Q-14 -21 -15 -29" />
+						</g>
+
+						<ellipse cx="0" cy="-9" rx="9.5" ry="12.5" fill="var(--ink)" />
+
+						<ellipse cx="0" cy="5" rx="5.6" ry="5.6" fill="var(--ink)" />
+
+						<path fill="var(--thread)" d="M-7 -17 L7 -17 L0 -9 Z" />
+
+						<path fill="var(--thread)" d="M-7 -1 L7 -1 L0 -9 Z" />
+					</g>
+				</svg>
+			</div>
+		</header>
+
+		<section id="produtos" aria-labelledby="h-produtos">
+			<div class="wrap">
+				<p class="sec-label">Produtos</p>
+
+				<h2 id="h-produtos">Três peças, um sistema só</h2>
+
+				<p class="sec-intro">
+					Cada uma funciona sozinha. Juntas, eliminam a digitação repetida:
+					o que o cliente escolhe no cardápio já chega no caixa, e o que falta
+					no estoque some da conversa.
 				</p>
 
-				<div class="cta-row">
-					<a class="cta cta-solid" href="#contato">
-						Pedir uma demonstração
-					</a>
+				<div class="products">
 
-					<a class="cta cta-ghost" href="#produtos">
-						Ver os produtos
-					</a>
+					<article class="product">
+						<svg class="product-ic" width="28" height="28" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+							<rect x="4" y="2" width="16" height="20" rx="2" />
+							<path d="M8 7h8M8 11h8M8 15h5" />
+						</svg>
+
+						<h3>Cardápio digital</h3>
+
+						<p>
+							Um link ou QR code na mesa. Sem app para o cliente baixar.
+						</p>
+
+						<ul>
+							<li>Fotos, preços e adicionais</li>
+							<li>Itens somem quando acaba</li>
+							<li>Preço muda na hora, sem reimprimir</li>
+						</ul>
+					</article>
+
+					<article class="product">
+						<svg class="product-ic" width="28" height="28" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+							<path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z" />
+						</svg>
+
+						<h3>Atendimento no WhatsApp</h3>
+
+						<p>
+							Responde a dúvida, monta o pedido e chama você quando precisa.
+						</p>
+
+						<ul>
+							<li>Atende fora do horário comercial</li>
+							<li>Consulta o cardápio antes de responder</li>
+							<li>Você assume a conversa quando quiser</li>
+						</ul>
+					</article>
+
+					<article class="product">
+						<svg class="product-ic" width="28" height="28" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+							<rect x="2" y="5" width="20" height="14" rx="2" />
+							<path d="M2 10h20M6 15h4" />
+						</svg>
+
+						<h3>PDV</h3>
+
+						<p>
+							O caixa que recebe os pedidos das mesas, do balcão e da entrega.
+						</p>
+
+						<ul>
+							<li>Comanda por mesa e por entrega</li>
+							<li>Fechamento e divisão de conta</li>
+							<li>Relatório do dia sem planilha</li>
+						</ul>
+					</article>
+
 				</div>
 			</div>
+		</section>
 
-			<svg class="web-art" viewBox="0 0 520 470" role="img" aria-label="Teia ligando cardápio, atendimento e PDV">
-				<g fill="none" stroke="var(--mist)" stroke-linecap="round" opacity="0.65">
-					<g class="thread-line" stroke-width="1.1">
-						<path d="M260 232 L495 218" />
-						<path d="M260 232 L432 372" />
-						<path d="M260 232 L292 452" />
-						<path d="M260 232 L96 386" />
-						<path d="M260 232 L26 240" />
-						<path d="M260 232 L74 84" />
-						<path d="M260 232 L242 14" />
-						<path d="M260 232 L410 76" />
-					</g>
+		<section id="funciona" aria-labelledby="h-funciona">
+			<div class="wrap">
+				<p class="sec-label">Como funciona</p>
 
-					<path class="thread-arc" stroke-width="1.4"
-						d="M382 226 Q356 279 361 302 Q305 306 288 350 Q239 314 205 315 Q189 267 148 238 Q173 189 169 152 Q222 151 240 109 Q288 145 324 145 Q340 191 382 226 Z" />
+				<h2 id="h-funciona">Do &ldquo;boa noite&rdquo; até a cozinha</h2>
 
-					<path class="thread-arc" stroke-width="1.3"
-						d="M448 222 Q408 300 415 336 Q332 341 306 407 Q231 351 179 353 Q155 279 92 235 Q131 158 125 102 Q205 101 233 36 Q307 92 361 92 Q385 165 448 222 Z" />
-				</g>
+				<p class="sec-intro">
+					O caminho de um pedido que chega pelo WhatsApp, sem ninguém digitar duas vezes.
+				</p>
 
-				<g class="node" style="animation-delay:1.4s">
-					<circle cx="242" cy="14" r="6" fill="var(--thread)" />
-					<text x="242" y="-2" text-anchor="middle" font-family="Space Mono,monospace" font-size="12"
-						fill="var(--dusk)">
-						cardápio
-					</text>
-				</g>
+				<div class="flow">
 
-				<g class="node" style="animation-delay:1.55s">
-					<circle cx="432" cy="372" r="6" fill="var(--thread)" />
-					<text x="432" y="396" text-anchor="middle" font-family="Space Mono,monospace" font-size="12"
-						fill="var(--dusk)">
-						PDV
-					</text>
-				</g>
+					<div class="step">
+						<h3>O cliente escreve</h3>
+						<p>
+							Manda mensagem para o número do restaurante, como faria com qualquer pessoa.
+						</p>
+					</div>
 
-				<g class="node" style="animation-delay:1.7s">
-					<circle cx="96" cy="386" r="6" fill="var(--thread)" />
-					<text x="96" y="410" text-anchor="middle" font-family="Space Mono,monospace" font-size="12"
-						fill="var(--dusk)">
-						WhatsApp
-					</text>
-				</g>
+					<div class="step">
+						<h3>O atendimento responde</h3>
+						<p>
+							Consulta o cardápio, confirma o que tem, tira dúvida de ingrediente e monta o pedido.
+						</p>
+					</div>
 
-				<g class="node" style="animation-delay:1.85s" transform="translate(260 232) scale(2.15)">
-					<g fill="none" stroke="var(--ink)" stroke-width="3.1" stroke-linecap="round"
-						stroke-linejoin="round">
-						<path d="M4 3 Q13 8 16 19" />
-						<path d="M-4 3 Q-13 8 -16 19" />
-						<path d="M5 -1 Q17 0 23 9" />
-						<path d="M-5 -1 Q-17 0 -23 9" />
-						<path d="M7 -7 Q19 -9 24 -17" />
-						<path d="M-7 -7 Q-19 -9 -24 -17" />
-						<path d="M6 -13 Q14 -21 15 -29" />
-						<path d="M-6 -13 Q-14 -21 -15 -29" />
-					</g>
+					<div class="step">
+						<h3>O pedido entra no PDV</h3>
+						<p>
+							Cai no caixa já com itens, observações e endereço. A cozinha vê na hora.
+						</p>
+					</div>
 
-					<ellipse cx="0" cy="-9" rx="9.5" ry="12.5" fill="var(--ink)" />
+					<div class="step">
+						<h3>Você acompanha</h3>
+						<p>
+							Se algo fugir do script, o atendimento chama você e passa a conversa.
+						</p>
+					</div>
 
-					<ellipse cx="0" cy="5" rx="5.6" ry="5.6" fill="var(--ink)" />
+				</div>
+			</div>
+		</section>
 
-					<path fill="var(--thread)" d="M-7 -17 L7 -17 L0 -9 Z" />
+		<section id="perguntas" aria-labelledby="h-perguntas">
+			<div class="wrap">
+				<p class="sec-label">Perguntas frequentes</p>
 
-					<path fill="var(--thread)" d="M-7 -1 L7 -1 L0 -9 Z" />
-				</g>
-			</svg>
-		</div>
-	</header>
+				<h2 id="h-perguntas">O que perguntam antes de começar</h2>
 
-	<section id="produtos">
-		<div class="wrap">
-			<p class="sec-label">Produtos</p>
+				<div class="faq">
 
-			<h2>Três peças, um sistema só</h2>
+					<details>
+						<summary>O cliente precisa instalar algum aplicativo?</summary>
+						<p>
+							Não. O cardápio abre por link ou QR code no navegador, e o atendimento
+							acontece no próprio WhatsApp do cliente.
+						</p>
+					</details>
 
-			<p class="sec-intro">
-				Cada uma funciona sozinha. Juntas, eliminam a digitação repetida:
-				o que o cliente escolhe no cardápio já chega no caixa, e o que falta
-				no estoque some da conversa.
-			</p>
+					<details>
+						<summary>Preciso trocar o número de WhatsApp do restaurante?</summary>
+						<p>
+							Não. O estabelecimento conecta o próprio número à plataforma. Quem já usa
+							o aplicativo WhatsApp Business pode continuar usando junto com o
+							atendimento automatizado.
+						</p>
+					</details>
 
-			<div class="products">
+					<details>
+						<summary>O atendimento responde sozinho o tempo todo?</summary>
+						<p>
+							Ele responde dúvidas, consulta o cardápio e monta o pedido. Quando a conversa
+							foge do previsto, ou quando você quiser, o atendimento passa a conversa para
+							uma pessoa da equipe.
+						</p>
+					</details>
 
-				<article class="product">
-					<svg class="product-ic" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-						stroke-width="1.5" aria-hidden="true">
-						<rect x="4" y="2" width="16" height="20" rx="2" />
-						<path d="M8 7h8M8 11h8M8 15h5" />
-					</svg>
+					<details>
+						<summary>Dá para usar só uma das partes?</summary>
+						<p>
+							Sim. Cardápio digital, atendimento no WhatsApp e PDV funcionam separados.
+							Juntos, eliminam a digitação repetida entre a conversa e o caixa.
+						</p>
+					</details>
 
-					<h3>Cardápio digital</h3>
+					<details>
+						<summary>Atendem fora de Uberlândia?</summary>
+						<p>
+							Sim. A Softweaver fica em Uberlândia, Minas Gerais, e atende estabelecimentos
+							em todo o Brasil de forma remota.
+						</p>
+					</details>
 
-					<p>
-						Um link ou QR code na mesa. Sem app para o cliente baixar.
-					</p>
+				</div>
+			</div>
+		</section>
 
-					<ul>
-						<li>Fotos, preços e adicionais</li>
-						<li>Itens somem quando acaba</li>
-						<li>Preço muda na hora, sem reimprimir</li>
-					</ul>
-				</article>
+		<section id="empresa" aria-labelledby="h-empresa">
+			<div class="wrap">
+				<p class="sec-label">A empresa</p>
 
-				<article class="product">
-					<svg class="product-ic" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-						stroke-width="1.5" aria-hidden="true">
-						<path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z" />
-					</svg>
+				<h2 id="h-empresa">Quem faz</h2>
 
-					<h3>Atendimento no WhatsApp</h3>
+				<div class="about-grid">
 
-					<p>
-						Responde a dúvida, monta o pedido e chama você quando precisa.
-					</p>
+					<div>
+						<p>
+							A Softweaver desenvolve e opera software de atendimento e vendas
+							para restaurantes, lanchonetes e comércios que vendem pelo WhatsApp.
+							Trabalhamos em Uberlândia e atendemos clientes em todo o Brasil.
+						</p>
 
-					<ul>
-						<li>Atende fora do horário comercial</li>
-						<li>Consulta o cardápio antes de responder</li>
-						<li>Você assume a conversa quando quiser</li>
-					</ul>
-				</article>
+						<p>
+							Cada estabelecimento conecta o próprio número de WhatsApp à nossa
+							plataforma e cadastra seus produtos. As mensagens dos consumidores
+							são usadas apenas para responder ao atendimento daquele estabelecimento,
+							manter o histórico da conversa e registrar os pedidos no sistema dele.
+						</p>
 
-				<article class="product">
-					<svg class="product-ic" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-						stroke-width="1.5" aria-hidden="true">
-						<rect x="2" y="5" width="20" height="14" rx="2" />
-						<path d="M2 10h20M6 15h4" />
-					</svg>
+						<p>
+							Não vendemos, compartilhamos ou reutilizamos dados de consumidores
+							para outra finalidade. Os detalhes estão na
+							<a href="privacidade.html">política de privacidade</a>.
+						</p>
+					</div>
 
-					<h3>PDV</h3>
+					<div class="datacard">
+						<h3>Dados cadastrais</h3>
 
-					<p>
-						O caixa que recebe os pedidos das mesas, do balcão e da entrega.
-					</p>
+						<dl>
+							<dt>Razão social</dt>
+							<dd>24.875.897 CLEIDIMAR LEONEL DOS SANTOS</dd>
 
-					<ul>
-						<li>Comanda por mesa e por entrega</li>
-						<li>Fechamento e divisão de conta</li>
-						<li>Relatório do dia sem planilha</li>
-					</ul>
-				</article>
+							<dt>Nome fantasia</dt>
+							<dd>Softweaver</dd>
+
+							<dt>CNPJ</dt>
+							<dd>24.875.897/0001-65</dd>
+
+							<dt>Localização</dt>
+							<dd>Uberlândia / MG — atendimento remoto em todo o Brasil</dd>
+
+							<dt>E-mail</dt>
+							<dd>
+								<a href="mailto:contato@softweaver.com.br">
+									contato@softweaver.com.br
+								</a>
+							</dd>
+
+							<dt>Telefone</dt>
+							<dd>
+								<a href="tel:+5534999151282">(34) 99915-1282</a>
+							</dd>
+						</dl>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="contact" id="contato" aria-labelledby="h-contato">
+			<div class="wrap">
+
+				<h2 id="h-contato">Vamos ver isso no seu cardápio</h2>
+
+				<p>
+					Mande o nome do restaurante e a gente monta uma demonstração
+					com os seus próprios pratos.
+				</p>
+
+				<a class="cta cta-solid" href="https://wa.me/5534999151282" target="_blank" rel="noopener">
+					Chamar no WhatsApp
+				</a>
 
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section id="funciona">
-		<div class="wrap">
-			<p class="sec-label">Como funciona</p>
-
-			<h2>Do &ldquo;boa noite&rdquo; até a cozinha</h2>
-
-			<p class="sec-intro">
-				O caminho de um pedido que chega pelo WhatsApp, sem ninguém digitar duas vezes.
-			</p>
-
-			<div class="flow">
-
-				<div class="step">
-					<h4>O cliente escreve</h4>
-					<p>
-						Manda mensagem para o número do restaurante, como faria com qualquer pessoa.
-					</p>
-				</div>
-
-				<div class="step">
-					<h4>O atendimento responde</h4>
-					<p>
-						Consulta o cardápio, confirma o que tem, tira dúvida de ingrediente e monta o pedido.
-					</p>
-				</div>
-
-				<div class="step">
-					<h4>O pedido entra no PDV</h4>
-					<p>
-						Cai no caixa já com itens, observações e endereço. A cozinha vê na hora.
-					</p>
-				</div>
-
-				<div class="step">
-					<h4>Você acompanha</h4>
-					<p>
-						Se algo fugir do script, o atendimento chama você e passa a conversa.
-					</p>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<section id="empresa">
-		<div class="wrap">
-			<p class="sec-label">A empresa</p>
-
-			<h2>Quem faz</h2>
-
-			<div class="about-grid">
-
-				<div>
-					<p>
-						A Softweaver desenvolve e opera software de atendimento e vendas
-						para restaurantes, lanchonetes e comércios que vendem pelo WhatsApp.
-						Trabalhamos em Uberlândia e atendemos clientes em todo o Brasil.
-					</p>
-
-					<p>
-						Cada estabelecimento conecta o próprio número de WhatsApp à nossa
-						plataforma e cadastra seus produtos. As mensagens dos consumidores
-						são usadas apenas para responder ao atendimento daquele estabelecimento,
-						manter o histórico da conversa e registrar os pedidos no sistema dele.
-					</p>
-
-					<p>
-						Não vendemos, compartilhamos ou reutilizamos dados de consumidores
-						para outra finalidade. Os detalhes estão na
-						<a href="privacidade.html">política de privacidade</a>.
-					</p>
-				</div>
-
-				<div class="datacard">
-					<h3>Dados cadastrais</h3>
-
-					<dl>
-						<dt>Razão social</dt>
-						<dd>24.875.897 CLEIDIMAR LEONEL DOS SANTOS</dd>
-
-						<dt>Nome fantasia</dt>
-						<dd>Softweaver</dd>
-
-						<dt>CNPJ</dt>
-						<dd>24.875.897/0001-65</dd>
-
-						<dt>Endereço</dt>
-						<dd>
-							Av. dos Ferreiras, nº 475 — Jardim Califórnia<br>
-							Uberlândia / MG — 38406-136
-						</dd>
-
-						<dt>E-mail</dt>
-						<dd>
-							<a href="mailto:contato@softweaver.com.br">
-								contato@softweaver.com.br
-							</a>
-						</dd>
-
-						<dt>Telefone</dt>
-						<dd>(34) 99915-1282</dd>
-					</dl>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<section class="contact" id="contato">
-		<div class="wrap">
-
-			<h2>Vamos ver isso no seu cardápio</h2>
-
-			<p>
-				Mande o nome do restaurante e a gente monta uma demonstração
-				com os seus próprios pratos.
-			</p>
-
-			<a class="cta cta-solid" href="https://wa.me/5534999151282" target="_blank" rel="noopener">
-				Chamar no WhatsApp
-			</a>
-
-		</div>
-	</section>
+	</main>
 
 	<footer>
 		<div class="wrap">
